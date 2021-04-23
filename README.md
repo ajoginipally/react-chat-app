@@ -6,15 +6,23 @@ This repository includes a simple API for use in the react sample project.
 
 In order to run this project you will need to have (Node JS)[https://nodejs.org/en/] installed.  With node, comes the package manager (NPM)[https://www.npmjs.com/].
 
-Run the following command from the root of this directory to install the dependencies.
+Run the following command from the root of this directory to install the dependencies. Also run the same command in /chat-app to install the front-end dependencies.
 
 ```
 $ npm install
 ```
 
-## Running the Application
+## Running the Application - API
 
 The following command will run the project using nodemon and refresh the server upon any changes to `.ts` files:
+
+```
+$ npm start
+```
+
+## Running the Application - Front End
+
+Run the following command inside chat-app/ it'll run the front end of the project at http://localhost:3000. Make sure to have this running at the same time as the API server on http://localhost:8080. All front-end API requests will be proxied through the API server:
 
 ```
 $ npm start
